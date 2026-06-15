@@ -8,3 +8,4 @@ Task-based projects built during DevWeekends AI Full Stack Engineering Fellowshi
 |---|------|------------|
 | 01 | HTML & Bootstrap Landing Page | HTML, CSS, Bootstrap |
 | 02 | Coming soon... | — |
+| 03 | Coming soon... | — |
