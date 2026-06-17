@@ -10,7 +10,7 @@ double divide(double a, double b) {
 }
 
 int main() {
-    cout << "=== Calculator v2 ===" << endl;
+    cout << "=== Super Calculator ===" << endl;
     cout << "Add(5,3) = " << add(5, 3) << endl;
     cout << "Subtract(5,3) = " << subtract(5, 3) << endl;
     cout << "Multiply(5,3) = " << multiply(5, 3) << endl;
