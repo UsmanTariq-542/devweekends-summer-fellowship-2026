@@ -92,3 +92,5 @@ int main(){
 
 }
 
+// time complexity of bubble sort, selection sort and insertion sort is O(n^2) in worst case and average case. In best case, time complexity of bubble sort and insertion sort is O(n) and selection sort is O(n^2).
+
