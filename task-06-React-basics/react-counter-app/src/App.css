@@ -1,0 +1,150 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, sans-serif;
+}
+
+.page-bg {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  background-image:
+    linear-gradient(rgba(10, 15, 25, 0.55), rgba(10, 15, 25, 0.55)),
+    url("https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1600&q=80");
+  background-size: cover;
+  background-position: center;
+}
+
+.counter-app {
+  width: 100%;
+  max-width: 520px;
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 3rem 2.5rem;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.25);
+  text-align: center;
+}
+
+.app-eyebrow {
+  font-size: 0.75rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #888;
+  margin: 0 0 0.25rem;
+}
+
+.app-title {
+  font-size: 1.6rem;
+  font-weight: 600;
+  margin: 0 0 1.5rem;
+}
+
+.count {
+  font-size: 3.5rem;
+  font-weight: 700;
+  margin: 0 0 1.5rem;
+  color: #1a1a1a;
+}
+
+.count.positive { color: #16a34a; }
+.count.negative { color: #dc2626; }
+
+.step-control {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.step-control select {
+  padding: 0.35rem 0.6rem;
+  border-radius: 6px;
+  border: 1px solid #d4d4d8;
+}
+
+.controls {
+  display: flex;
+  gap: 0.75rem;
+  justify-content: center;
+}
+
+.control-btn {
+  flex: 1;
+  padding: 0.7rem 1rem;
+  font-size: 1.05rem;
+  border: 1px solid #d4d4d8;
+  border-radius: 8px;
+  background: #fafafa;
+  cursor: pointer;
+  transition: background 0.15s ease;
+}
+
+.control-btn:hover { background: #eeeeee; }
+.control-btn:active { transform: scale(0.97); }
+
+.log-section {
+  margin-top: 2.5rem;
+  text-align: left;
+}
+
+.log-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.75rem;
+}
+
+.log-header h2 {
+  font-size: 1.1rem;
+  margin: 0;
+  color: #444;
+}
+
+.clear-btn {
+  border: none;
+  background: none;
+  color: #999;
+  font-size: 0.8rem;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.clear-btn:hover { color: #666; }
+
+.action-log {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+.action-log li {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.55rem 0.75rem;
+  border-bottom: 1px solid #eee;
+  font-size: 0.9rem;
+  color: #333;
+}
+
+.action-log li:last-child { border-bottom: none; }
+
+.timestamp {
+  font-size: 0.75rem;
+  color: #aaa;
+}
+
+.empty-state {
+  color: #999;
+  font-size: 0.9rem;
+}
