@@ -1,0 +1,25 @@
+.section {
+  padding: 64px 24px 96px;
+}
+
+.layout {
+  display: flex;
+  gap: 56px;
+  flex-wrap: wrap;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+  padding-top: 6px;
+}
+
+.infoLine {
+  margin-top: 6px;
+  font-size: 15px;
+}
+
+@media (max-width: 720px) {
+  .layout { gap: 32px; }
+}
