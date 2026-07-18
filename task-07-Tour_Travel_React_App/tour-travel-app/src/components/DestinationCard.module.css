@@ -1,0 +1,138 @@
+.card {
+  background: var(--paper);
+  color: var(--ink);
+  border-radius: 10px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+  border: 1.5px solid var(--ink);
+}
+
+.photoWrap {
+  position: relative;
+  height: 190px;
+}
+
+.photo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.tag {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  background: var(--accent);
+  color: var(--ink);
+  font-family: var(--font-mono);
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  padding: 4px 10px;
+  border-radius: 999px;
+  border: 1.5px solid var(--ink);
+}
+
+.stub {
+  padding: 18px 20px 20px;
+  position: relative;
+}
+
+.stubTop {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.name {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.country {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  opacity: 0.6;
+  margin-top: 2px;
+}
+
+.code {
+  font-family: var(--font-mono);
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--accent);
+  filter: brightness(0.75);
+}
+
+.blurb {
+  margin-top: 12px;
+  font-size: 14px;
+  line-height: 1.5;
+  opacity: 0.85;
+}
+
+.perforation {
+  margin: 16px -20px;
+  height: 0;
+  border-top: 2px dashed rgba(14, 42, 46, 0.3);
+  position: relative;
+}
+.perforation::before,
+.perforation::after {
+  content: "";
+  position: absolute;
+  top: -8px;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: var(--ink);
+}
+.perforation::before { left: -8px; }
+.perforation::after { right: -8px; }
+
+.stubBottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.meta {
+  display: flex;
+  gap: 12px;
+  font-family: var(--font-mono);
+  font-size: 12px;
+  opacity: 0.75;
+}
+
+.priceRow {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.price {
+  font-family: var(--font-mono);
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.bookBtn {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  background: var(--ink);
+  color: var(--paper);
+  border: none;
+  padding: 9px 14px;
+  border-radius: var(--radius);
+  cursor: pointer;
+  transition: background 0.15s ease;
+}
+.bookBtn:hover { background: var(--accent); color: var(--ink); }
+.bookBtn:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
